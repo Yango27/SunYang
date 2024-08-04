@@ -20,7 +20,11 @@ body
     font-family: 'Rocher';
     src: url(https://assets.codepen.io/9632/RocherColorGX.woff2);
 }
-
+@font-face 
+{
+    font-family: "Monocraft";
+    src: url(https://github.com/IdreesInc/Monocraft/releases/download/v3.0/Monocraft-nerd-fonts-patched.ttf);
+}
 .hour
 {
     margin-left: 2em;
