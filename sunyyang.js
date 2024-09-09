@@ -124,7 +124,6 @@ function mes()
     let now = new Date();
     let date = new Date("2024-08-07");
     actDateMonth(date);
-    console.log(date);
     let diff = date - now;
     showHour(diff, "monthAniversario");
 }
