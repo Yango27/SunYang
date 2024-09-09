@@ -68,6 +68,10 @@ function showHour(diff, id)
     {
         offsetHours = 2;
     }
+    if(id == "daysTogether")
+    {
+        offsetHours = -offsetHours;
+    }
     diff = diff - offsetHours*60*60*1000;
     let days = Math.floor(diff/(1000*60*60*24));
     let hours = Math.floor(diff % (1000 * 60 * 60 * 24) / (1000 * 60 * 60));
@@ -120,6 +124,7 @@ function mes()
     let now = new Date();
     let date = new Date("2024-08-07");
     actDateMonth(date);
+    console.log(date);
     let diff = date - now;
     showHour(diff, "monthAniversario");
 }
@@ -153,7 +158,7 @@ function daysTogether()
 function specialDay()
 {
     let now = new Date();
-    let date = new Date("2024-08-24");
+    let date = new Date("2024-11-20");
     let diff = date - now;
     showHour(diff,"specialDay");
 }
